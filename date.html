@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#ffb3c7" />
+  <title>Pick our date ✨</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body data-page="date">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand-link" href="./index.html" aria-label="Back to start">💘</a>
+
+    <button
+      id="muteBtn"
+      class="icon-btn"
+      type="button"
+      aria-label="Toggle sound"
+      aria-pressed="false"
+      title="Sound"
+    >
+      <span class="icon" aria-hidden="true">🔊</span>
+    </button>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="card" aria-labelledby="title">
+      <div class="eyebrow">Date planning, but make it cute</div>
+      <h1 id="title" class="title">Pick our date ✨</h1>
+      <p class="subtext">Barbara, choose the vibe and I’ll handle the magic.</p>
+
+      <div class="grid" role="list" aria-label="Date options">
+        <button class="choice" type="button" data-choice="Cozy dinner 🍝" role="listitem">
+          <span class="choice-title">Cozy dinner</span>
+          <span class="choice-emoji" aria-hidden="true">🍝</span>
+          <span class="choice-desc">Warm lights, good food, soft eyes.</span>
+        </button>
+
+        <button class="choice" type="button" data-choice="Movie night 🎬" role="listitem">
+          <span class="choice-title">Movie night</span>
+          <span class="choice-emoji" aria-hidden="true">🎬</span>
+          <span class="choice-desc">Your pick. I’ll bring the snacks.</span>
+        </button>
+
+        <button class="choice" type="button" data-choice="Ice cream + walk 🍦" role="listitem">
+          <span class="choice-title">Ice cream + walk</span>
+          <span class="choice-emoji" aria-hidden="true">🍦</span>
+          <span class="choice-desc">Sweet treats + hand-holding upgrade.</span>
+        </button>
+
+        <button class="choice" type="button" data-choice="Surprise me 😏" role="listitem">
+          <span class="choice-title">Surprise me</span>
+          <span class="choice-emoji" aria-hidden="true">😏</span>
+          <span class="choice-desc">Trust fall… but romantic.</span>
+        </button>
+      </div>
+
+      <div class="confirm" id="confirm" hidden aria-live="polite">
+        <div class="confirm-title">Locked in ✅</div>
+        <div class="confirm-text" id="confirmText">Barbara chose: …</div>
+        <div class="confirm-foot">Screenshot this and send it to me 😄</div>
+      </div>
+
+      <div class="btn-row btn-row-slim">
+        <a class="btn btn-ghost" href="./yes.html">Back</a>
+        <a class="btn btn-primary" href="./index.html">Replay the chaos</a>
+      </div>
+
+      <div class="tiny-note">
+        Keyboard tip: Tab to a card, then press Enter/Space.
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Plot twist: you’ll look cute no matter what you choose.</span>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
