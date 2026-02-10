@@ -1,9 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/yes", "destination": "/yes.html" },
-    { "source": "/date", "destination": "/date.html" }
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/yes", "dest": "/yes.html" },
+    { "src": "/date", "dest": "/date.html" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
