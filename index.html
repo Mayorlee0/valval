@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#ffb3c7" />
+  <title>Barbara 💘 Valentine</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body data-page="index">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="brand" aria-hidden="true">💘</div>
+
+    <button
+      id="muteBtn"
+      class="icon-btn"
+      type="button"
+      aria-label="Toggle sound"
+      aria-pressed="false"
+      title="Sound"
+    >
+      <span class="icon" aria-hidden="true">🔊</span>
+    </button>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="card" aria-labelledby="title">
+      <div class="eyebrow">A very serious romantic proposal (with minor chaos)</div>
+
+      <h1 id="title" class="title">Barbara, will you be my Valentine? 💘</h1>
+      <p class="subtext">
+        I promise top-tier cuddles, elite snacks, and exactly <em>zero</em> emotional buffering.
+      </p>
+
+      <div class="btn-row" role="group" aria-label="Valentine choice">
+        <a class="btn btn-primary" href="./yes.html" id="yesBtn">
+          Yes 💖
+        </a>
+
+        <div class="no-zone" id="noZone">
+          <button class="btn btn-ghost" type="button" id="noBtn">
+            No 🙃
+          </button>
+        </div>
+      </div>
+
+      <p class="attempts" id="attemptsText" aria-live="polite">
+        Nice try 😌 Attempts: <span id="attemptsCount">0</span>
+        <span class="attempt-msg" id="attemptsMsg"></span>
+      </p>
+
+      <div class="tiny-note">
+        Tip: You can try keyboard too — but the “No” button is… energetic.
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Made with ✨ intent ✨ for Barbara</span>
+    </footer>
+  </main>
+
+  <!-- Cute fake system alert -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close="true"></div>
+    <div
+      class="modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDesc"
+      tabindex="-1"
+    >
+      <div class="modal-header">
+        <div class="modal-badge" aria-hidden="true">⚠️</div>
+        <h2 class="modal-title" id="modalTitle">Valentine System Error</h2>
+      </div>
+
+      <p class="modal-desc" id="modalDesc">
+        Action “No” is not supported on Barbara’s device.
+      </p>
+
+      <div class="modal-actions">
+        <button class="btn btn-ghost" type="button" id="retryBtn">
+          Retry
+        </button>
+        <a class="btn btn-primary" href="./yes.html" id="meantYesBtn">
+          I meant YES 😭
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
